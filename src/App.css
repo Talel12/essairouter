@@ -1,7 +1,7 @@
 .App{
   background-color: rgb(0, 0, 0);
   color: white;
-}
+} 
 .tt{
   display: flex;
   justify-content: space-between;
