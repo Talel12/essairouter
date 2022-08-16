@@ -6,6 +6,7 @@ export const moviesList = [
     description: `Les Éternels (Eternals) est un film de super-héros américain réalisé par Chloé Zhao, sorti en 2021.
                   `,
     rate: 3,
+    
   },
   {
     id: 2,
@@ -33,7 +34,7 @@ export const moviesList = [
   },
   {
     id: 5,
-
+    vid:<iframe width="560" height="315" src="https://www.youtube.com/embed/-FZ-pPFAjYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
     title: `The Batman`,
     posterUrl: `https://www.cinetrafic.fr/images/affiches/fiche/aff_6611020200729111142.jpg`,
     description: `En 2021, l'Homme Chauve-Souris issu des comic-books édités par DC Comics revient au cinéma `,

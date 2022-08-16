@@ -20,7 +20,7 @@ const MovieCard = ({
             <h6>{title}</h6>
           </div>
         </CardTitle>
-        <Link to={`/movie/${movie.id}`}>
+        <Link to={`/movies/${movie.id}`}>
           <CardImg
             style={{ height: `300px`, width: "300px" }}
             src={posterUrl}
@@ -35,6 +35,7 @@ const MovieCard = ({
             <Rate rating={rate} />
           </div>
         </CardBody>
+        
       </Card>
     </div>
   );

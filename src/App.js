@@ -11,6 +11,7 @@ function App() {
       <div>
        
         <Main />
+        
       </div>
 
       <div className="footer">

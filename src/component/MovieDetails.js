@@ -1,9 +1,14 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
-import { CardBody, CardText } from 'reactstrap'
+import { useParams } from 'react-router-dom'
+import { CardBody, CardText, CardTitle } from 'reactstrap'
 import MovieCard from './MovieCard'
+import Rate from './Rate'
 
-const MovieDetails = ({title="dqsdqs",Rate=0,rate=5,CardTitle="ssffssf",description='dsdsdfsd'}) => {
+const MovieDetails = ({movies}) => {
+  const {id}=useParams()
+  const movie =movies.filter(el=>el.id === parseInt(id))[0]
+  console.log(movie)
   return (
    <div className="film">
       <Card
@@ -11,18 +16,19 @@ const MovieDetails = ({title="dqsdqs",Rate=0,rate=5,CardTitle="ssffssf",descript
       >
         <CardTitle>
           <div className=" row justify-content-center ">
-            <h6>{title}</h6>
+            <h6>{movie.title}</h6>
           </div>
         </CardTitle>
         
         <CardBody>
           <div className="">
-            <CardText>{description}</CardText>
+            <CardText>{movie.description}</CardText>
           </div>
           <div className="">
-            <Rate rating={rate} />
+            <Rate rating={movie.rate} />
           </div>
         </CardBody>
+        {movie.vid}
       </Card>
 
 
